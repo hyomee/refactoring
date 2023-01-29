@@ -2,10 +2,16 @@ package com.hyomee.refactoring.initData.entity;
 
 import com.hyomee.refactoring.initData.dto.TbSbEntrDTO;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
+@Getter
 @Entity
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name="TB_SB_ENTR")
 public class TbSbEntr {
     @Id

@@ -7,6 +7,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface TbSbEntrRespository extends JpaRepository<TbSbEntr, Long> {
 
-     int countByEntrIdAndProdNo(String entrId, String entrNo);
+     int countByEntrIdAndProdNo(String entrId, String prodNo);
+
+     TbSbEntr findByEntrId(String entrId);
 
 }

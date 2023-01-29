@@ -9,15 +9,10 @@ import lombok.*;
 @AllArgsConstructor
 @ToString
 @EqualsAndHashCode
-public class TbSbEntrDTO {
-
+public class TbSbSvcByEntrDTO {
     private Long id;
-    private String entrId;
     private String svcCd;
-    private String prodNo;
-    private String entrSttsCd;
-
-
-
-
+    private String entrId;
+    private String prodCd;
+    private String svcSttsCd;
 }

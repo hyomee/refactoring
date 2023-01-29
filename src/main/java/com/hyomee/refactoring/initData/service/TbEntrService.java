@@ -5,6 +5,7 @@ import com.hyomee.refactoring.initData.entity.TbSbEntr;
 import com.hyomee.refactoring.initData.mapper.HyomeeMapper;
 import com.hyomee.refactoring.initData.repository.TbSbEntrRespository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +13,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor // final 로 선언된 것 만 생성
 @Log4j2
 public class TbEntrService {
 
@@ -40,5 +41,10 @@ public class TbEntrService {
         }
 
         return tbSbEntrDTORn;
+    }
+
+    public TbSbEntrDTO findByEntr(String entrId) {
+        TbSbEntr tbSbEntr = tbSbEntrRespository.findByEntrId(entrId);
+        return HyomeeMapper.INSTANCE.toTbSbEntrDTO(tbSbEntr);
     }
 }
