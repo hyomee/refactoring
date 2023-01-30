@@ -1,4 +1,4 @@
-package com.hyomee.refactoring.extractVariable;
+package com.hyomee.refactoring.baseRefactoring;
 
 import com.hyomee.refactoring.initData.dto.TbEntrDevSaleDTO;
 import com.hyomee.refactoring.initData.policy.DevContractPolicy;

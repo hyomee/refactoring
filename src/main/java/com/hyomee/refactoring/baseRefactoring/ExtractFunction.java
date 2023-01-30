@@ -1,4 +1,4 @@
-package com.hyomee.refactoring.extractFunction;
+package com.hyomee.refactoring.baseRefactoring;
 
 import org.springframework.stereotype.Service;
 

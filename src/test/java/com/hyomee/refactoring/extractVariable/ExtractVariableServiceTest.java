@@ -1,5 +1,6 @@
 package com.hyomee.refactoring.extractVariable;
 
+import com.hyomee.refactoring.baseRefactoring.ExtractVariableService;
 import com.hyomee.refactoring.initData.dto.TbEntrDevSaleDTO;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.BeforeEach;
