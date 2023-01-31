@@ -187,7 +187,8 @@ class PricePlanRate {
         return pricePlanRate - sectionDcRate;
     }
 
-    int pricePlanRate(CustDTO custDTO) {
+    // Combine Functions into Transform
+    int combinePricePlanRate(CustDTO custDTO) {
         int usePeriodDcRate = usePeriod(custDTO.getJoinMonth(), custDTO.getJoinYear()) * ClientUtils.DC_RATE_USERATE ;
         int pricePlanDcRate = pricePlanRate(usePeriodDcRate, custDTO.getProcePlanRate());
         int pricePlanDcRateTmp = pricePlanRateTmp(pricePlanDcRate);
@@ -232,6 +233,6 @@ class Client03Refactoring {
     private final PricePlanRate pricePlanRate;
 
     int calculationOfPricePlan() {
-        return pricePlanRate.pricePlanRate(ClientUtils.getCust());
+        return pricePlanRate.combinePricePlanRate(ClientUtils.getCust());
     }
 }
