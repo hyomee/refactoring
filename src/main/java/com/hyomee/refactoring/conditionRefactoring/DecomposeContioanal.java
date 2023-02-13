@@ -20,7 +20,7 @@ public class DecomposeContioanal {
     public int mobilePhonePrice(CustSaleInfoVO custSaleInfoVO) {
 
         // 현재 정책 가지고 오기
-        SatPolicy.SatPricePolicy satPricePolicy = SatPolicy.SatPricePolicy.valueOf("POLICY_" + custSaleInfoVO.getSaleDate().getYear())
+        SatPolicy.SatPricePolicy satPricePolicy = SatPolicy.SatPricePolicy.valueOf("POLICY_" + custSaleInfoVO.getSaleDate().getYear());
 
         if (  satPricePolicy.getSatPolicyStartDate().compareTo(custSaleInfoVO.getSaleDate()) >= 0 &&
                         custSaleInfoVO.getSaleDate().compareTo(satPricePolicy.getSatPolicyEndDate()) >=0 ) {
@@ -28,7 +28,7 @@ public class DecomposeContioanal {
         } else {
 
         }
-        return 0
+        return 0;
     }
 }
 
@@ -75,20 +75,20 @@ class SatPolicy {
 
     }
 
-    @Getter
-    @AllArgsConstructor
-    enum ModelPolicy {
-
-        POLICY_2002(List.of( List.of("삼성", 1000000))) ;
-//        POLICY_2003(List.of(List.of("아이폰", 1300000),
-//                            List.of("삼성", 1200000)) ;
-
-        private List<List<String>>  models;
-        private String modelNm;
-        private int salePrice;
-
-
-    }
+//    @Getter
+//    @AllArgsConstructor
+//    enum ModelPolicy {
+//
+////        POLICY_2002(List.of( List.of("삼성", "1000000"))) ,
+////       POLICY_2003(List.of(List.of("아이폰", 1300000),
+//////                            List.of("삼성", 1200000)) ;
+//
+//        private List<List<String>>  models;
+//        private String modelNm;
+//        private int salePrice;
+//
+//
+//    }
 
 }
 
