@@ -4,6 +4,8 @@ import com.hyomee.refactoring.initData.dto.TbSbEntrDTO;
 import com.hyomee.refactoring.initData.dto.TbSbSvcByEntrDTO;
 import com.hyomee.refactoring.initData.entity.TbSbEntr;
 import com.hyomee.refactoring.initData.entity.TbSbSvcByEntr;
+
+
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
@@ -28,5 +30,7 @@ public interface HyomeeMapper {
 
     List<TbSbSvcByEntrDTO> toTbSbSvcByEntrDTOList(List<TbSbSvcByEntr> tbSbSvcByEntrList);
     TbSbSvcByEntrDTO toTbSbSvcByEntrDTO(TbSbSvcByEntr tbSbSvcByEntr);
+
+
 
 }

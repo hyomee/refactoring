@@ -1,4 +1,4 @@
-package com.hyomee.refactoring.capsulate;
+package com.hyomee.refactoring.ecapsulate;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
