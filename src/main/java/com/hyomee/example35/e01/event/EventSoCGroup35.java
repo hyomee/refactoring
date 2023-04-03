@@ -34,7 +34,7 @@ public class EventSoCGroup35 {
         int deviceDcPrice = policyVO.getEventBenefit().getDeviceDcPrice();
         // 3. 혜택 조건 체크
         BenefitVO benefitVO = validationPlanService.validationPlan(saleEventVO, policyVO.getEventModelSenio());
-        policyVO = null; // 내부 비정적 클래스는 메모리 누수 발행할 수 있으므로 null 초가화 한다,
+        //policyVO = null; // 내부 비정적 클래스는 메모리 누수 발행할 수 있으므로 null 초가화 한다,
         //System.gc();
         // 4 정책 반영
         return StringUtils.isEmpty(benefitVO.getReason()) ?
