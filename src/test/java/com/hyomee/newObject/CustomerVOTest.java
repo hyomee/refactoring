@@ -1,11 +1,9 @@
 package com.hyomee.newObject;
 
-import io.micrometer.observation.Observation;
-import lombok.extern.slf4j.Slf4j;
+import com.hyomee.newObject.vo.CustomerVO;
+import com.hyomee.newObject.vo.YoungCustomerVO;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 
 class CustomerVOTest {
@@ -59,6 +57,18 @@ class CustomerVOTest {
                 "34");
 
         CustomerVO customerVO = CustomerVO.newYoungCustomerVO(youngCustomerVO);
+
+        System.out.println(customerVO.toString());
+    }
+
+    @Test
+    @DisplayName("정적 메서드")
+    void staticCustomerVO_01() {
+        CustomerVO customerVO = new CustomerVO(
+                "홍길동",
+                "20001231000000");
+
+
 
         System.out.println(customerVO.toString());
     }

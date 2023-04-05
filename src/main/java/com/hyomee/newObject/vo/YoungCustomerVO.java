@@ -1,4 +1,4 @@
-package com.hyomee.newObject;
+package com.hyomee.newObject.vo;
 
 public class YoungCustomerVO {
     private String customerNo;
