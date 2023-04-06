@@ -1,4 +1,4 @@
-package com.hyomee.newObject.builder;
+package com.hyomee.newObject.builder.base;
 
 public class SubscriberBuilder {
 

@@ -1,8 +1,8 @@
 package com.hyomee.newObject;
 
-import com.hyomee.newObject.builder.SubscriberBuilder;
-import com.hyomee.newObject.builder.SubscriberInnerBuilderVO;
-import com.hyomee.newObject.builder.SubscriberVO;
+import com.hyomee.newObject.builder.base.SubscriberBuilder;
+import com.hyomee.newObject.builder.base.SubscriberInnerBuilderVO;
+import com.hyomee.newObject.builder.base.SubscriberVO;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

@@ -1,6 +1,4 @@
-package com.hyomee.newObject.builder;
-
-import com.hyomee.newObject.builder.SubscriberBuilder;
+package com.hyomee.newObject.builder.base;
 
 public class SubscriberVO {
     private String subscriberNo;
