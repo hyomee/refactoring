@@ -1,6 +1,7 @@
 package com.hyomee.newObject.builder.gof.ott.requestObject;
 
 import com.google.gson.Gson;
+import com.hyomee.newObject.builder.gof.ott.requestObject.builder.OttBuilder;
 import com.hyomee.newObject.builder.gof.ott.requestObject.builder.tving.TvingBuilder;
 import com.hyomee.newObject.builder.gof.ott.requestObject.builder.tving.TvingVO;
 import com.hyomee.newObject.builder.gof.ott.requestObject.builder.wave.WaveBuilder;
@@ -14,7 +15,7 @@ public class Director {
 
     public String makeTvingVO(SubscriberVO subscriberVO,
                                   List<ProductVO> productVOs) {
-        TvingBuilder tvingBuilder =  new TvingBuilder();
+        OttBuilder tvingBuilder =  new TvingBuilder();
 
         tvingBuilder.subscriber(subscriberVO)
                     .product(productVOs);
@@ -26,7 +27,7 @@ public class Director {
 
     public String makeWaveVO(SubscriberVO subscriberVO,
                               List<ProductVO> productVOs) {
-        WaveBuilder waveBuilder = new WaveBuilder();
+        OttBuilder waveBuilder = new WaveBuilder();
 
         waveBuilder.subscriber(subscriberVO)
                 .product(productVOs);

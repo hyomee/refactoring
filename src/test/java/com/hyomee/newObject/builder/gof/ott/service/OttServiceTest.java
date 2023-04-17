@@ -29,8 +29,8 @@ class OttServiceTest {
         subscriberVO.setEndData("99991231235959") ;
 
         productVOs = List.of(
-                new ProductVO("PROD_00001", "영상", "A"),
-                new ProductVO("PROD_00002", "영상_002", "A")
+                new ProductVO("PROD_00001", "영상", "A", "UFLIX"),
+                new ProductVO("PROD_00002", "영상_002", "A", "WAVE")
         ) ;
     }
     @Test
@@ -41,6 +41,12 @@ class OttServiceTest {
 
     @Test
     void ottWaveMakeMsg() {
+        String msg = ottService.ottWaveMakeMsg(subscriberVO, productVOs);
+        System.out.println(msg);
+    }
+
+    @Test
+    void getTransData() {
         String msg = ottService.ottWaveMakeMsg(subscriberVO, productVOs);
         System.out.println(msg);
     }
